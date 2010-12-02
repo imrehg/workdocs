@@ -1,0 +1,57 @@
+\begin{thebibliography}{1}
+
+\bibitem{Allcock2010}
+D.~T.~C. Allcock, J.~A. Sherman, D.~N. Stacey, A.~H. Burrell, M.~J. Curtis,
+  \underline{G.~Imreh}, N.~M. Linke, D.~J. Szwer, S.~C. Webster, A.~M. Steane, and D.~M.
+  Lucas.
+\newblock Implementation of a symmetric surfafe-electrode ion trap with field
+  compensation using a modulated raman effect.
+\newblock {\em New Journal of Physics}, 12(5):053026, 2010.
+
+\bibitem{Thesis}
+\underline{G.~Imreh}.
+\newblock Implementing Segmented Ion Trap Designs For Quantum Computing, 
+\newblock {\em DPhil Thesis}, 2008, available at \href{http://www.physics.ox.ac.uk/Users/iontrap/pubs/theses/GImrehthesis.pdf}{http://www.physics.ox.ac.uk/Users/iontrap/pubs/theses/GImrehthesis.pdf}.
+
+\bibitem{Myerson2008}
+A.~H. Myerson, D.~J. Szwer, S.~C. Webster, D.~T.~C. Allcock, M.~J. Curtis,
+  \underline{G.~Imreh}, J.~A. Sherman, D.~N. Stacey, A.~M. Steane, and D.~M. Lucas.
+\newblock High-fidelity readout of trapped-ion qubits.
+\newblock {\em Physical Review Letters}, 100(20):200502, 2008.
+
+\bibitem{McDonnell2007}
+M.~J. McDonnell, J.~P. Home, D.~M. Lucas, \underline{G.~Imreh}, B.~C. Keitch, D.~J. Szwer,
+  N.~R. Thomas, S.~C. Webster, D.~N. Stacey, and A.~M. Steane.
+\newblock Long-lived mesoscopic entanglement outside the lamb-dicke regime.
+\newblock {\em Physical Review Letters}, 98(6):063603, 2007.
+
+\bibitem{Lucas2007}
+D.~M. Lucas, B.~C. Keitch, J.~P. Home, \underline{G.~Imreh}, M.~J. McDonnell, D.~N. Stacey,
+  D.~J. Szwer, and A.~M. Steane.
+\newblock A long-lived memory qubit on a low-decoherence quantum bus.
+\newblock {\em Pre-print}, page arXiv:0710.4421v1, 2007.
+
+\bibitem{Home2006}
+J.~P. Home, M.~J. McDonnell, D.~M. Lucas, \underline{G.~Imreh}, B.~C. Keitch, D.~J. Szwer,
+  N.~R. Thomas, S.~C. Webster, D.~N. Stacey, and A.~M. Steane.
+\newblock Deterministic entanglement and tomography of ion-spin qubits.
+\newblock {\em New Journal of Physics}, 8:188, 2006.
+
+\bibitem{Beszeda2006}
+I.~Beszeda, T.~Kocsis, \underline{G.~Imreh}, F.~Weigl, H-G. Boyen, P.~Ziemann, and D.~L.
+  Beke.
+\newblock Behaviour of discontinuous gold films on srtio3 substrates under
+  annealing.
+\newblock {\em Applied Surface Science}, 253:1160--1164, 2006.
+
+%% \bibitem{Future1}
+%% \underline{G.~Imreh}, {\em et. al.},
+%% \newblock A microfabricated segmented ion trap design,
+%% \newblock {\em in preparation}
+
+%% \bibitem{Future2}
+%% \underline{G.~Imreh}, {\em et. al.},
+%% \newblock Efficient shuttling of ions in a segmented ion trap geometry,
+%% \newblock {\em in preparation}
+
+\end{thebibliography}
