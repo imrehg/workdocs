@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\title{Spectoscopy in cavities}
+\author{Gergely Imreh}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Overview}
+
+Cavities change a lot of physical processes and since we employ many of them, we ought to know what to expect.
+
+\section{Experiments}
+
+Most of the experiments concerned use a Cs cell within the cavity, and the fluorescence is observed.
+
+\subsection{Two-photon spectroscopy}
+
+
+\subsubsection{High resolution}
+
+A larger cavity and very precise tuning of the laser frequencies to find the two-photon linewidth of e.g. the 6S-8S transition. Very much needs to consider all major effects: Gaussian and transit broadening. Some paper by another Taiwanese group ignored the transit broadening to arrive to a Lorentzian linewidth of $\Gamma \approx 2 \pi \times 2 MHz$. That, I think, is overestimating the real linewidth significantly. We have fitting program that is able to fit the lineshape that is a result of convolving these three effects. Later other effects might need to be considered, but probably will be minor compared to this. 
+
+Typical length scale is in the few tens of cm.
+
+\subsubsection{Portable laser}
+
+The cavity is between the laser diode and the difffaction grating used to couple out part of the light. A small cell is between these two and light is focused such that the two photon fluorescence can be observed.
+
+Typical size scales are $L_\mathrm{ cavity} = 0.07 m$, $L_\mathrm{ cell} = 0.04 m$, $w_0 \approx 30-40 \mu m$.
+
+In this situation the transit broadening can be very significant, while the Gaussian broadening can be reduced (due to better alignment). Other cavity effects, such as mode pulling (Section \ref{ssec:modepull}) and pushing (Section \ref{ssec:modepush}) are much less understood. They should be present but at the moment I don't think we are doing the right analysis.
+
+The current method to assess the mode pushing/pulling is by offset locking: offset the error signal with a given voltage, and observe the output frequency. At the moment, the linearity of ``offset voltage vs. beat frequency'' is used to conclude that there's no significant effect. In my oppinion that measure has no meaningful result in our case and wouldn't be able to find the absence or presence of that effect.
+
+\section{Physica effects}
+\subsection{Mode pulling}
+\label{ssec:modepull}
+
+Some explanation is in \cite{Lindberg1999}.
+Due to the different index of refraction near the atomic resonance. The resonance frequency of the cavity is
+\begin{equation}
+\nu = \frac{m c}{2 n L}
+\end{equation}
+where $m$ is the (longitudinal) mode number, $c$ is the speed of light, $n$ the index of refraction and $L$ the length of the cavity. In our usual mixed cavity this should be rewritten as
+\begin{equation}
+\nu = \frac{m c}{2 \left(n_\mathrm{air} (L_\mathrm{air} + \Delta L) + n_\mathrm{atom} L_\mathrm{cell}\right)}
+\end{equation}
+where $n_\mathrm{air}$ and $n_\mathrm{atom}$ are the index of refraction in air and in the vapour cell, $L_\mathrm{air}$ and $L_\mathrm{cell}$ are the beam length in air and in the cell, and $\Delta L$ is the length change of the cell by e.g. a piezo element, which changes only the beam path in the air.
+
+...
+
+The end result is a narrowing of the overall profile. If there are multiple modes under the same profile, then their separation becomes smaller (hence the ``pulling'').
+
+\subsection{Mode pushing}
+\label{ssec:modepush}
+
+\bibliographystyle{apalike}
+\bibliography{physics_all}
+
+\end{document}
