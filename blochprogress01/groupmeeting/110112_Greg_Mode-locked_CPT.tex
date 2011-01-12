@@ -1,0 +1,607 @@
+\documentclass{beamer}
+
+\mode<presentation>
+\usepackage{beamerthemesplit}
+\usepackage{graphics}
+\usetheme{Madrid}
+%% \usetheme{Boadilla}
+
+\title[Comb CPT]{Coherent population trapping\\with mode-locked laser}
+\author{Gergely Imreh}
+%% \institute[IAMS]
+%% {
+%% IAMS, Academia Sinica \\
+%% \medskip
+%% {\emph{imrehg@gmail.com}}
+%% }
+\date{January 12, 2011}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+
+\section{Others' research}
+%% Compare research: Rb, Cs, CW, Mode locked, theory, experiment
+
+
+\section{The case of caesium}
+%% Electronic structure D1, D2 line
+
+
+\section{Experimental complexity}
+%% What effects to take into account
+
+
+
+
+%% \section{Ion trapping}
+%% \frame
+%% {
+%% 	\frametitle{Trapping charged particles}
+%% 	\begin{block}<+->{What is the problem?}
+%% 		Laplace's equation: $\nabla^2\phi = 0$\\
+%% 		We cannot trap with electrostatic fields in all 3 dimensions!
+%%  	\end{block}
+
+%% 	\begin{columns}<+->[T]
+%%  		\begin{column}{6cm}
+%%   			\begin{block}{Solution:}
+%% 				\begin{itemize}
+%% 					\item Oscillating electric field\\(confining-expelling)
+%% 					\item Ion cannot escape due to intertia.
+%% 					\item Time averaged field is confining.
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{4cm}
+%% 			\includegraphics[width=4cm]{pictures/Saddle_point.eps} 
+%%  		\end{column}
+%%  	\end{columns}
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{Ion trap design example: the linear Paul trap}
+%% 	\begin{columns}[C]
+%% 		\begin{column}{5cm}
+%% 			\begin{block}{Considerations}
+%% 				\begin{itemize}
+%% 					\item<+-> \alert<.>{Endcaps}:\\ static confinement along the trap axis.
+%% 					\item<+-> \alert<.>{RF electrodes}:\\ oscillating field for radial trapping
+%% 					\item<+-> Straightforward assembly,\\large length scale (mm),\\medium-strength confinement\\ (few 100kHz)
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{6cm}
+%% 			\includegraphics[width=6cm]{pictures/paul_trap.eps} 
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{Ion trap design example: the linear Paul trap}
+%% 	\begin{columns}[C]
+%% 		\begin{column}{5cm}
+%% 			\begin{block}{Ion trap advantages}
+%% 				\begin{itemize}
+%% 					\item<+-> \alert<.>{Small coupling to the environment}:\\ free space confinement
+%% 					\item<+-> \alert<.>{Large coupling on demand}:\\ laser-ion interaction
+%% 					\item<+-> Noise source:\\ fluctuating electric/magnetic fields
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{6cm}
+%% 			\includegraphics<1>[width=6cm]{pictures/paul_trap.eps} 
+%% 			\includegraphics<2->[width=6cm]{pictures/paul_trap_laser.eps} 
+%% 		\end{column}
+%% 	\end{columns}
+
+%% }
+
+
+
+%% \frame
+%% {
+%% 	\frametitle{The ion's motion in the RF field}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{5cm}
+%% 			\only<1>{
+%% 				\begin{flushright}
+%% 				Direction of force on a \textbf{+} ion,\\radial cross section of trap $\rightarrow$
+%% 				\end{flushright}
+%% 			}
+%%  		\only<2->{\begin{block}{Motion in the RF field}
+%% 			\begin{itemize}
+%% 				\item<2-> Ion enters "trapping" region
+%% 				\item<3-> Ion moves according\\ the instantenous fields
+%% 				\item<4-> Field changes polarity
+%% 				\item<5-> Ion needs to change\\ direction
+%% 				\item<8-> On average: trapping
+%% 				\item<9> Laser cooling:\\ reduce excursion
+%% 			\end{itemize}
+%% 		\end{block}}
+%% 	\end{column}
+%% 	\begin{column}{5cm}
+%% 		\begin{center}
+%% 			\only<1>{\includegraphics[height=4.5cm]{trapping/fieldvectors_1.eps}\\ T = 0}
+%% 			\only<2>{\includegraphics[height=4.5cm]{trapping/fieldvectors_2.eps}\\ T = 0}
+%% 			\only<3>{\includegraphics[height=4.5cm]{trapping/fieldvectors_3.eps}\\ T = 0}
+%% 			\only<4>{\includegraphics[height=4.5cm]{trapping/fieldvectors_4.eps}\\ T =  $\frac{1}{2}$ RF period}
+%% 			\only<5>{\includegraphics[height=4.5cm]{trapping/fieldvectors_5.eps}\\ T =  $\frac{1}{2}$ RF period}
+%% 			\only<6>{\includegraphics[height=4.5cm]{trapping/fieldvectors_6.eps}\\ T =  1 RF period}
+%% 			\only<7>{\includegraphics[height=4.5cm]{trapping/fieldvectors_7.eps}\\ T =  1 RF period}
+%% 			\only<8>{\includegraphics[height=4.5cm]{trapping/fieldvectors_8.eps}\\ Long term movement}
+%% 			\only<9>{\includegraphics[height=4.5cm]{trapping/fieldvectors_9.eps}\\ With cooling}
+%% 		\end{center}
+%% 	\end{column}
+%% \end{columns}
+
+%% }
+
+
+%% \frame
+%% {
+%% 	\frametitle{Trap parameters}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{6cm}
+%% 			\begin{block}{RF Pseudo-potential}
+%% 				\begin{itemize}
+%% 					\item<1-> RF potential:\\$\phi(\vec{r},t) = V_{\rm rf}\phi_{\rm rf}(\vec{r})\cos(\Omega_{\rm rf} t)$\\
+%% 					\item<.->
+%% 					\item<2-> Time-average pseudo-potential:\\$U_p(\vec{r}) = \frac{q^2 V_{\rm rf}^2}{4m\Omega_{\rm rf}^2}|\nabla \phi_{\rm rf}(\vec{r})|^2$\\
+%% 					\item<.->
+%% 					\item<3-> Limits on suitable $\Omega_{\rm rf}$ values
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{4cm}
+%% 			\begin{center}
+%% 				\only<1>{\includegraphics[height=5.5cm]{trapping/pseudopot.eps}}
+%% 				\only<2->{\includegraphics[height=5.5cm]{trapping/pseudopot2.eps}}
+%% 			\end{center}
+%% 		\end{column}
+%% 	\end{columns}
+
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{Choices of ions}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{4cm}
+%% 			\begin{block}{Commonly used ion species}
+%% 				\begin{itemize}
+%% 					\item $^8$Be$^{+}$
+%% 					\item $^{24}$Mg$^{+}$, $^{25}$Mg$^{+}$
+%% 					\item $^{40}$Ca$^{+}$, $^{43}$Ca$^{+}$
+%% 					\item $^{88}$Sr$^{+}$
+%% 					\item $^{111}$Cd$^{+}$
+%% 					\item $^{137}$Ba$^{+}$
+%% 					\item $^{171}$Yb$^{+}$
+%% 					\item $^{198}$Hg$^{+}$	       
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{7.5cm}
+%% 			\begin{center}
+%% 				\includegraphics[width=7.5cm]{pictures/Periodic_Table_iontrap.eps}
+%% 			\end{center}
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{Calcium for ion trapping}
+%% 	\begin{columns}[T]
+%% 		\begin{column}{5cm}
+%% 			\begin{block}{Calcium advantages}
+%% 				\begin{itemize}[<+->]
+%% 					\item All transitions accessible\\ with diode lasers.
+%% 					\item Long-lived metastable\\ state.
+%% 					\item Different isotopes available ($^{40}$Ca,$^{43}$Ca,...)
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{5cm}
+%% 			\includegraphics[height=4.5cm]{pictures/ca40ionlevels_v3.eps}%
+%% 		\end{column}
+%% 	\end{columns}
+
+%% }
+
+
+%% \section[Linear Paul trap]{Experiments with a macroscopic linear Paul trap}
+%% \frame
+%% {
+%% 	\frametitle{Experiments with a Paul trap}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{6cm}
+%% 			\begin{itemize}
+%% 				\item<2-> Deterministic entanglement\\ \begin{scriptsize}[Home, New J. Phys. 8, 188 (2006)]\end{scriptsize}
+%% 				\item<3-> Mesoscopic Schr\"odinger's cat state\\ \begin{scriptsize}[McDonnell, PRL 98, 063603 (2007).]\end{scriptsize}
+%% 				\item<4-> $>$1s coherence qubit\\ \begin{scriptsize}[Lucas, arXiv pre-print:0710.4421]\end{scriptsize}
+%% 				\item<5-> High fidelity readout\\ \begin{scriptsize}[Myerson, PRL 100, 200502 (2008)]\end{scriptsize}
+%% 				\item<6-> Sympathetic cooling\\ \begin{scriptsize}[Home, arXiv pre-print:0810.1036]\end{scriptsize}
+%% 			\end{itemize}
+%% 		\end{column}
+%% 		\begin{column}{4cm}
+%% 			\includegraphics<1->[height=4.5cm]{pictures/ourpaultrap.eps}%
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{Towards large-scale quantum computing}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{6cm}
+%% 			\begin{block}{How to scale up?}
+%% 				\begin{itemize}
+%% 					\item<1-> Squeezing more ions into single trapping region
+%% 					\item<2-> Using separate trapping regions
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{5cm}
+%% 			\includegraphics<1>[width=5cm]{pictures/manyions.eps}%
+%% 			\includegraphics<2>[width=4cm]{pictures/traparray.eps}%
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+
+%% \section[Sandia trap]{A microscopic design: the Sandia trap}
+%% \frame
+%% {
+%% 	\frametitle{The Sandia design}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{6cm}
+%% 			\begin{block}{Design aims and issues}
+%% 				\begin{itemize}
+%% 					\item Aim: prototype multiple trapping region design
+%% 					\item Semi-planar arangement of electrodes
+%% 					\item Precision manufacturing with microfabrication
+%% 					\item RF wiring needed manual modification
+%% 					\item Added out-of-plane wire electrode
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{5cm}
+%% 			\includegraphics[width=5cm]{pictures/sandiatrapscheme2.eps}%
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+%% \subsection{Design}
+%% \frame
+%% {
+%% 	\frametitle{The Sandia design}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{4.5cm}
+%% 			\begin{block}{Electric field in the sandia trap}
+%% 				\begin{itemize}
+%% 					\item RF electrodes shield the ion from DC
+%% 					\item Needs out-of-plane elements for complete control:\\ ground plane, extra wire-electrode
+%% 					\item Good uniformity of RF field along the axis
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{6cm}
+%% 			\begin{center}
+%% 				\includegraphics[width=6cm]{pictures/sandiafield_v1.eps}\\ Radial cross section of the RF field at the trap centre
+%% 			\end{center}
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+%% \subsection{Micromotion compensation}
+%% \frame
+%% {
+%% 	\frametitle{Micromotion compensation}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{5cm}
+%% 			\begin{block}{}
+%% 				\begin{itemize}
+%% 					\item<1-> Need to overlap RF saddle point and DC minimum
+%% 					\item<1-> Adjustments to voltages on DC electrodes
+%% 					\item<1-> "Bad" compensation:\\ \alert{scan over atomic transition}
+%% 					\item<2-> The finishing touches:\\ \alert{RF-photon correlation}
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{6cm}
+%% 			\includegraphics[width=6cm]{pictures/compensation397_2.eps}%
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{RF-photon correlation}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{5cm}
+%% 			\begin{block}{Sequence}
+%% 				\begin{itemize}
+%% 					\item Function generator provides RF + sync signal
+%% 					\item Photon counting with photomultiplier (PMT)
+%% 					\item Time-to-amplitude converter (TAC) for timing of photons within RF cycle
+%% 					\item Computer generate hystograms from TAC voltage
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{6cm}
+%% 			\includegraphics[width=6cm]{pictures/computer_2}%
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+
+%% \frame
+%% {
+%% 	\frametitle{RF-photon correlation}
+%% 	\includegraphics[width=10.5cm]{rfcorr/rfexplots.eps}%
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{Heating rate measurement}
+%% 	\begin{block}{Heating rate }
+%% 		\begin{itemize}
+%% 			\item Heating can cause decoherence of the quantum bit
+%% 			\item \alert{Source} of heating is the \alert{changing electric field}
+%% 			\item Noise on voltage line can be filtered
+%% 			\item Stray potentials on the electrodes are hard to control
+%% 			\item Heating rate is characteristic to the design
+%% 		\end{itemize}
+%% 	\end{block}
+%% }
+
+%% \subsection{Heating rate measurements}
+%% \frame
+%% {
+%% 	\frametitle{Doppler recooling method}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{4.5cm}
+%% 			\begin{block}{Experimental sequence}
+%% 				\begin{itemize}
+%% 					\item<1-> \alert<1>{Doppler-cooling} lasers are \alert<1>{on}.
+%% 					\item<2-> \alert<2>{866nm} "repumping" laser turned \alert<2>{off}. Ion heats up.
+%% 					\item<3-> \alert<3>{866nm} laser turned back \alert<3>{on}, time-resolved fluorescence recorded.
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{5cm}
+%% 			\includegraphics<1>[height=5.5cm]{heating/dopplerrecool_1.eps}%
+%% 			\includegraphics<2>[height=5.5cm]{heating/dopplerrecool_2.eps}%
+%% 			\includegraphics<3>[height=5.5cm]{heating/dopplerrecool_3.eps}%
+%% 		\end{column}
+%% 	\end{columns}
+  
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{Experimental data}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{5cm}
+%% 			\begin{block}{Example scan}
+%% 				\begin{itemize}
+%% 				    \item Timing:\\ 50$\mu$s bin times
+%% 					\item Fitted temperature:\\ 31.3$\pm$2.0 K 
+%% 					\item Heating delay: 505ms
+%% 					\item 301 repeats
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{6cm}
+%% 			\includegraphics[width=6cm]{heating/cooling_fit_v3.eps}
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+
+%% \frame
+%% {
+%% 	\frametitle{Measurements}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{5cm}
+%% 			\begin{block}{Parameters affecting observed signal}
+%% 				\begin{itemize}
+%% 					\item<1-> Temperature:\\change in fluorescence
+%% 					\item<2-> Laser detuning:\\change in shape
+%% 					\item<3-> Laser intensity:\\change in time scale
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{6cm}
+%% 			\includegraphics<1>[width=6cm]{heating/coolingfit_theory2.eps}%
+%% 			\includegraphics<2>[width=6cm]{heating/coolingfit_theory.eps}%
+%% 			\includegraphics<3>[width=6cm]{heating/coolingfit_theory3.eps}%
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{Effect of filtering}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{5cm}
+%% 			\begin{block}{Comparing heating rates}
+%% 				\begin{itemize}
+%% 					\item No filter on DC lines:\\ 206$\pm$80 K/s
+%% 					\item Low-pass filter\\(cutoff $\sim$1kHz):\\ 50-60 K/s
+%% 					\item Maximum heating delay of 705ms with filtering
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{6cm}
+%% 			\includegraphics[width=6cm]{heating/filterheating_v5.eps}%
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{Compare to other traps}
+%% 	\begin{block}{Noise spectral density vs. trap size}
+%% 		\includegraphics[width=11.5cm]{pictures/noise_spectra_v3.eps}%
+%% 	\end{block}
+%% }
+
+
+%% \subsection{Ion shuttle}
+
+%% \frame
+%% {
+%% 	\frametitle{Ion shuttle}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{5.5cm}
+%% 			\begin{block}{Control voltages}
+%% 				\begin{itemize}
+%% 					\item Calculate electric field in the trap based on design (+corrections)
+%% 					\item Predict voltage sequence to move ion to arbitrary position in trap
+%% 					\item Estimate the effect of imperfect voltages
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{5.5cm}
+%% 			\includegraphics[width=5.1cm]{longshuttle/shuttlewaveform_v1.eps}\\
+%% 			\includegraphics[width=4cm]{longshuttle/recordedwaveform_v1.eps}%
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{Move that ion}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{5.5cm}
+%% 			\begin{block}{Example shuttle}
+%% 				\begin{itemize}
+%% 					\item Ion leaves the camera's view ($\pm50\mu m$ from trap centre)
+%% 					\item Shuttles to 360$\mu m$ away
+%% 					\item Delay time at far position: 120ms
+%% 					\item Shuttle back to trap centre
+%% 					\item Ion enter the camera's view, flurescence restored
+%% 					\item Repetition rate is limited by software
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{5.5cm}
+%% 			\includegraphics[width=5.1cm]{longshuttle/longshuttle_v1.eps}\\
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+
+%% \section[Other traps]{Other ion traps at Oxford}
+%% \frame
+%% {
+%% 	\frametitle{Liverpool trap}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{6cm}
+%% 			\begin{block}{Summary}
+%% 				\begin{itemize}
+%% 					\item Mesoscopic distance scales\\ (750$\mu m$ Electrode-ion separation)
+%% 					\item Manual assembly (with problems)
+%% 					\item Trapped ions
+%% 					\item Heating rate ($\sim 8$K/s) large for this trap size
+%% 					\item "Mysterious" compensation
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{5cm}
+%% 			\includegraphics<1>[width=5cm]{pictures/liverpool_trap.eps}%
+%% 			\includegraphics<2>[width=5cm]{pictures/liverpool3.eps}%
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+
+%% \frame
+%% {
+%% 	\frametitle{The Liverpool design}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{6.5cm}
+%% 			\begin{center}
+%% 				\includegraphics[width=6.5cm]{pictures/liverpoolsheme_v3.eps}\\
+%% 				Schematics
+%% 			\end{center}
+%% 		\end{column}
+%% 		\begin{column}{4.5cm}
+%% 			\begin{center}
+%% 				\includegraphics[width=4cm]{pictures/liverpool_contours_v1_4.eps}\\
+%% 				Radial cross-section of RF field
+%% 			\end{center}
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{The Lucent design}
+%% 	\begin{columns}[c]
+%% 		\begin{column}{6cm}
+%% 			\begin{block}{Lucent trap results}
+%% 				\begin{itemize}
+%% 					\item<1-> Large number of trapping regions
+%% 					\item<1-> Small/variable length scale 
+%% 					\item<1-> Microfabrication
+%% 					\item<2-> \alert{Except}: it didn't work...
+%% 				\end{itemize}
+%% 			\end{block}
+%% 		\end{column}
+%% 		\begin{column}{5cm}
+%% 			\begin{center}
+%% 				\includegraphics[width=5cm]{pictures/LucentTrapSmall.eps}\\
+%% 			\end{center}
+%% 		\end{column}
+%% 	\end{columns}
+%% }
+
+
+%% \section[Outlook]{Outlook}
+%% \frame
+%% {
+%% 	\frametitle{Outlook}
+%% 	\begin{block}{Many different directions}
+%% 		\begin{itemize}
+%% 			\item Experiments with more than two ions in Paul trap (quantum gates)
+%% 			\item Probing fundamental physics:\\ "weak measurement"
+%% 			\item Separating/joining ions
+%% 			\item Different trap designs and trap manufacturing:\\ surface trap, ...
+%% 		\end{itemize}
+%% 	\end{block}
+%% }
+
+%% \frame
+%% {
+%% 	\frametitle{The surface trap}
+%% 	\begin{block}{Manufacturing "theory and practice"}
+%% 		\begin{columns}[T]
+%% 			\begin{column}{5.5cm}
+%% 				\includegraphics<1>[height=4cm]{pictures/surface_layout.eps}
+%% 				\includegraphics<2>[width=4cm]{pictures/bad_surface.eps}
+%% 			\end{column}
+%% 			\begin{column}{5.5cm}
+%% 				\includegraphics<1->[width=4cm]{pictures/surface_mic_1.eps}
+%% 			\end{column}
+%% 		\end{columns}
+%% 	\end{block}
+%% }
+
+
+%% \frame
+%% {
+%% 	\frametitle{The Oxford Ion Trapping Group}
+%% 	\includegraphics[width=10.5cm]{pictures/groupphoto.eps}%
+%% }
+
+
+\end{document}
