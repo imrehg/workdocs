@@ -20,22 +20,121 @@
 
 \frame{\titlepage}
 
-\section[Outline]{}
-\frame{\tableofcontents}
+% \section[Outline]{}
+% \frame{\frametitle{On the menu}\tableofcontents}
 
+\section{Physical effects}
+\frame{
+  \frametitle{The complex environment of a caesium cell}
+ 
+  \begin{block}{Physical effects to take into account}
+   \begin{itemize}
+    \item Pulse bandwith (spatial-light modulator)
+    \item Pulse intensity
+    \item Collision rate
+    \item Collision type
+    \item Beam size
+    \item Temperature
+    \item External/residual magnetic field
+    \item Beam path
+    \item Chopping
+   \end{itemize}
+  \end{block}
+
+
+}
+
+\section{Modeling}
+\frame
+{
+  \frametitle{Mathematics}
+
+  \begin{block}{Solving the Bloch-equation}
+    \begin{center}
+      $\dot \rho(t) = A(t) \rho(t)$ \\ where $\rho$ is the density matrix (in vector form), $A$ is the Bloch-matrix.
+    \end{center}
+
+    \begin{itemize}
+      \item Ordinary-differential equation methods
+      \item Matrix exponential
+    \end{itemize}
+  
+  \end{block}
+
+}
 
 \section{Others' research}
-%% Compare research: Rb, Cs, CW, Mode locked, theory, experiment
+\frame{
+  \frametitle{Othe groups' settings}
+  \begin{block}{As reported in journals}
 
+Experiments were done for a long time already.
 
-\section{The case of caesium}
-%% Electronic structure D1, D2 line
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+  \hline
+  & \multicolumn{2}{|c|}{\bf{CW}} & \multicolumn{2}{|c|}{\bf{Pulsed}} \\
+  \hline
+  & no buffer & buffer & no buffer & buffer\\
+  \hline
+  \bf{Rb} & Yes & Yes & Yes &  \\
+  \bf{Cs} & Yes & Yes & Yes & x \\
+  \hline
+\end{tabular}
+\end{center}
+      \end{block}
+}
 
+\frame{
+  \frametitle{Results from others}
+  
+  \begin{itemize}
+    \item Arissian 2006 (basic setup, power broadening)
+    \item Arissian 2009 (global offset effect)
+    \item Aumiler 2010 (different repetition rates)
+    \item Erhard 2000 (Rb + Ne buffer)
+    \item Wynands 1999 (Cs + buffer)
+  \end{itemize}
+}
 
-\section{Experimental complexity}
 %% What effects to take into account
+\frame
+{
+	\frametitle{Evolution of the CPT signal}
+	\begin{block}{}
+          Signal buildup depends on many parameters (that we might not know)
+ 	\end{block}
 
+	\begin{columns}<+->[T]
+ 		% \begin{column}{4cm}
+  		% 	\begin{block}{Signal build up}
+		% 		\begin{itemize}
+		% 			\item CPT build-up time depends on many parameters (that we might not know)
+		% 		\end{itemize}
+		% 	\end{block}
+		% \end{column}
+		\begin{column}{9cm}
+			\only<1>{\includegraphics[width=9cm]{timeevolve_broad.pdf}}
+			\only<2>{\includegraphics[width=9cm]{cptevolve_broad.pdf}}
+ 		\end{column}
+ 	\end{columns}
+}
 
+\section{To-do list}
+\frame{
+  \frametitle{Open questions}
+
+  \begin{itemize}
+    \item Include higher energy levels
+    \item Include magnetic ($\mathrm{m_{F}}$) sublevels
+    \item Evaluate the collisinal effects\\(broadening, phase shift, velocity class mixing)
+    \item Evaluate Doppler-effects
+    \item Frequency-domain description
+    \item Model the chopping (intensity, frequency, ...)
+    \item External fields and polarization
+    \item Maxwell-Bloch equations (field + atoms)
+  \end{itemize}
+}
 
 
 %% \section{Ion trapping}
