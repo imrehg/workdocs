@@ -107,6 +107,13 @@ The simplest Bloch equations are written in the following form, for the time der
 
 A note about the $\Delta$ detunings: in general $\Delta_{jk} = \Delta_{jl} + \Delta_{lk}$ with $\Delta_{ij} = - \Delta_{ji}$ and blue detuning is positive.
 
+\subsection{Solving the differential equation}
+
+There are quite a few different possibilities to solve the equations. If the case is a simple CW situation, matrix exponentials are easy to use (kind of\footnote{Check ``Nineteen dubious ways to compute the exponential of a matrix''.}):
+\begin{equation}
+\rho(t) = \exp(At)\rho(0).
+\end{equation}
+This, however does not work in the case of $A = A(t)$. Then one have to turn to either solving the differential equations directly (well, no...), or to the theory of linear dynamic systems which did learn how to deal with this. The solution I found is called Peano-Baker series. Check more in detail: Dacunha: ``Transition matrix and generalized matrix exponential via the Peano-Baker series'', Journal of Difference Equations and Applications, 2005. This is actually a good opportinity, since if the transition matrix is calculated for one pulse more-or-less efficiently, then it can be applied in succession. Looking at the paper breefly, sparse matrices can still be included as our case is relatively straightforward.
 
 \section{Repeating results from other papers}
 
