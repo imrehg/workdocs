@@ -1,0 +1,163 @@
+\documentclass[10pt]{article}
+
+% %A Few Useful Packages
+\usepackage{marvosym}
+\usepackage[a4paper]{geometry}
+\RequirePackage{color,graphicx}
+
+\renewcommand\refname{Publication list}
+
+%%%%%%%%%% 1ine MARGINS %%%%%%%%%%%%
+\setlength{\textwidth}{16.5cm}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\textheight}{22.5cm}
+\setlength{\topmargin}{0cm}
+\setlength{\headheight}{0cm}
+\setlength{\headsep}{0cm}
+\setlength{\footskip}{1.5cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\begin{document}
+%% \thispagestyle{empty}
+\par{\centering{\Huge Gergely Imreh\bigskip\par}}
+
+% %--------------------SECTIONS-----------------------------------
+\section*{Personal information}
+
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & Miskolc, Hungary | 1980. December 7. \\
+    \textsc{Address:}   & 2F-201, No. 47, Alley 53, Lane 514, \\
+                        & Jongjheng Rd, Sinjhuang City, 24255 \\
+    \textsc{Phone:}     & +886-932192631 \\
+    \textsc{email:}     & \href{mailto:imrehg@gmail.com}{imrehg@gmail.com}
+\end{tabular}
+
+%% %Section: Work Experience at the top
+\section*{Research position}
+\begin{tabular}{p{3cm}|p{11cm}}
+ \emph{Current} & Postdoctoral researcher at \textbf{IAMS, Academia Sinica}\\
+\textsc{2008 November}& \small{PI: Dr. Wang-Yau \textsc{Cheng}, Quantum Control Laboratory}\\
+&\footnotesize{Main responsibilities: Magneto-optical trapping, optical frequency combs, photodetections systems, theoretical atomic physics calculations, experimental system modeling, data collection and analysis software}
+\end{tabular}
+
+%% %Section: Education
+\section*{Education}
+\begin{tabular}{p{3cm}|p{11cm}}	
+ \textsc{2008 October}& DPhil in \textsc{Atomic and Laser Physics}, \textbf{University of Oxford}, UK\\
+ \textsc{2004 October} & Thesis: ``Implementing Segmented Ion Trap Designs For Quantum Computing'' \\ & \small Advisor: Prof. Andrew M. \textsc{Steane}\\\multicolumn{2}{c}{} \\
+
+\textsc{2004 July} & Masters with Honours in \textsc{Physics}, \textbf{University of Debrecen}, Hungary\\
+\textsc{1999 September} & Thesis: ``Surface diffusion'' \\ & \small Advisors: Prof. Dezs\H{o} \textsc{Beke} and Dr. Istv\'an \textsc{Beszeda}\\\multicolumn{2}{c}{} \\
+
+\textsc{2002 July 1-31}& Visiting student at \textbf{University of Ulm}, Germany
+\end{tabular}
+
+\section*{Teaching experience}
+\begin{tabular}{rl}
+\textsc{2007 - 2008:} & Tutorial teaching (2-on-1 class): Geometrical and Physical Optics,\\& Exeter College, University of Oxford \\
+\textsc{2003 - 2004:} & Student laboratory teaching assistant: General Physics, Electronics, Optics,\\& University of Debrecen \\
+\textsc{2003 - 2004:} & Extra courses taken from the teaching curriculum (practical teaching and psychology)\\
+\textsc{2003 - 2004:} & Private tutor for high school physics students
+\end{tabular}
+
+%Section: Scholarships and additional info
+\section*{Scholarships}
+\begin{tabular}{rl}
+\textsc{2001 - 2004:} & Scholarship of the Republic of Hungary for students with an outstanding curriculum\\
+\textsc{2001 - 2003:} & Scholarship of the City of Miskolc for student with an outstanding curriculum
+\end{tabular}
+
+%% %Section: Languages
+\section*{Languages}
+\begin{tabular}{rl}
+\textsc{Hungarian:}&Mother tongue\\
+\textsc{English:}&Fluent\\
+\textsc{German:}&Basic knowledge\\
+\textsc{Chinese:}&Basic knowledge\\
+\end{tabular}
+
+%% \newpage
+%% \thispagestyle{empty}
+
+\section*{Conferences}
+\input{conferences.tex}
+
+%%% Publication list
+
+%% %% Bootstrap
+%% \cite{Beszeda2006}
+%% \cite{Home2006}
+%% \cite{Lucas2007}
+%% \cite{McDonnell2007}
+%% \cite{Myerson2008}
+%% \cite{Allcock2010}
+%% \bibliographystyle{plain}
+%% \bibliographystyle{•}_all}
+
+%% Final version, to be adjusted
+\input{resume.bbl}
+
+\newpage
+
+\section*{Projects}
+
+\subsection*{MOT}
+
+Goal was to revive a previous MOT experiment that was not in use for a while (couple of years). Included
+\begin{itemize}
+\item setting up master-slave trapping laser system (the stabilized master laser was another student's project that I took over now)
+\item frequency stabilized repumping laser system
+\item recreating the optical paths
+\item vacuum system testing
+\item control electronics
+\item detection system
+\end{itemize}
+The MOT was working for a while, but focus shifted for a while, some equipment was only loaned to us and had to be returned, now back in the stage of re-reviving the experiment, and making it more stable.
+
+\subsection*{Theoretical calculations and experimental analysis}
+
+One main project in our lab for the last 1-1.5 years was the optical frequency comb induced coherent population trapping (CPT) experiment in a Cs vapour cell. The frequency comb was built and controlled by one of the students and the rest of the experimental design we were doing jointly. To have better ideas about the expected signal, I am doing calculations using Bloch equations.
+\begin{itemize}
+\item Full calculation of the D1 and D2 lines
+\item Include effect of vapour cell setting and magnetic fields
+\item Compare CW and frequency comb effects
+\end{itemize}
+The calculations already have some results, though need some more optimization and the experiment to work to have something concrete to compare with.
+
+Also took part in analysing experimental data as I aim to understand all experiments our lab is undertaking, including:
+\begin{itemize}
+\item Multi-line spectral fitting
+\item Cavity enhanced spectroscopy fitting where multiple line-altering effects need to be numerically convolved
+\item Magnetic measurements
+\item Rigorous error estimation
+\end{itemize}
+
+\subsection*{Experimental control}
+
+Previously most experiments were done mostly manually adjusting the control parameters and reading off values, or occasionally using Labview scripts provided by some instrument manufacturers. I tried to encourage computer controlled experiments for better and more data, better repeatability and reliability, and ease of use.
+\begin{itemize}
+\item Writing control software for instruments we use, including wavemeter, function generators, lock-in amplifier, spectrum analyser, oscilloscopes, cameras, spatial light modulator, DACs. Tried to interface everything that can be connected to a computer.
+\item Encourage the students to have more rigorous laboratory logs, better and more accessible records
+\end{itemize}
+
+\subsection*{Laboratory equipment design}
+
+Designing, simulating and building equipment for different tasks:
+\begin{itemize}
+\item Optical detection systems, amplified photodiode detection circuit design and assembly
+\item Magnetic field coils, simulating optimal size and geometry, shielding, magnetic field measurement equipment
+\item Waveplate fast/slow axis testing with home-made metal mirror
+\end{itemize}
+
+\subsection*{Lab network management}
+
+Set up laboratory server with backup, wiki, shared network resources, and manage the laptops used for the experiment. Encouraging the use of open software for every task possible (Linux for computers, LaTeX for documents, Python for mathematics, KiCad for electronics, FreeCAD for design). This is an ongoing work, but have success with each of them.
+
+\end{document}
