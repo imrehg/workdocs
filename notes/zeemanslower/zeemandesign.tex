@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Gergely Imreh}
+\title{Zeeman slower design}
+\begin{document}
+
+\maketitle
+
+\section{Intro}
+Writing up the Zeeman slower calculation.
+
+\section{Dimensionless variables}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+{\bf Unit} & {\bf Scaling} & {\bf Rationale} \\ 
+\hline 
+Time & $1 / \Gamma$ & Reciprocal linewidth as relevant interaction parameter\\
+\hline 
+Distance & $1 / k$ & Reciprocal wavenumber as relevant interaction parameter \\ 
+\hline 
+Temperature & $T_r = \frac{\hbar^2 k^2}{m k_B}$ & Recoil temperature temperature \\ 
+\hline 
+Mass & AMU & Atomic mass unit \\ 
+\hline 
+Magnetic field & from $\mu_B$ & Bohr magneton \\ 
+\hline 
+\hline 
+Current & A = 10^4 \frac{G s^2}{kg} & Here it is derived \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+Does this really make sense? Is it really necessary??? Actually, all of it can be made to reference a relevant parameter. But this might not be the correct way to do things, should write out the equation of motion and then do the simplification.
+
+
+\section{Initial parameters}
+
+The magnetic field is inversely proportional to the pitch (proportional to the wire density). To choose initial parameters, we can have:
+
+Pitch is
+\begin{equation}
+\varphi = \frac{\partial z(p)}{\partial \theta(p)}
+\end{equation}
+and then
+\begin{equation}
+B \sim \frac{1}{\varphi} = \frac{\partial \theta(p)}{\partial z(p)} = 
+  \frac{\partial \theta(p)}{\partial p}\frac{\partial p}{\partial z(p)}	
+\end{equation}
+from where 
+\begin{equation}
+\frac{\partial \theta(p)}{\partial p} \sim B \frac{\partial z(p)}{\partial p}	
+\end{equation}
+and since $z$ is just a linear function of $p$, with the single relevant parameter $c_7$:
+\begin{equation}
+\frac{\partial \theta(p)}{\partial p} \sim c_7 B(z(p))
+\end{equation}
+where the field $B$ can be approximated up to a certain exponential. If $z$ is linear, then $B \sim z^5 \sim p^5$. Choose the length of coil first, that is $L = z(2\pi) - z(0)$,  and position, from there move on to $B$, then $\theta$. The whole thing is shifted by about $R$.
+
+
+\section{Physics}
+
+Calculating the net gyromagnetic factor:
+\begin{equation}
+\mu' = \mu_B \left(g_e m_e - g_g m_g\right)
+\end{equation}
+where $g$ refers to the Lande g-factor of the hyperfine levels ($g_F$), $m$ to the Zeeman sublevel's quantum number, and $e,g$ are excited and grounds states, respectively. Doing the calculation in case of Rb $\mu' = \mu_B$ for all practical purposes for $|m_e - m_g| = 1$.
+
+Most probable velocity:
+\begin{equation}
+v_p = \sqrt{\frac{2 k_B T}{m}}
+\end{equation}
+
+\bibliographystyle{plain}
+
+\end{document}
