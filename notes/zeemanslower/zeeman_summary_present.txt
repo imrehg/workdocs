@@ -1,0 +1,25 @@
+<[autotemplate]
+documentclass={beamer}
+usepackage={listings}
+usepackage={wasysym}
+usepackage={graphicx}
+date={\today}
+lstdefinestyle={basic}{....}
+titleframe=True
+title={Zeeman slower summary}
+author={Gergely Imreh}
+[autotemplate]>
+
+== Magnetic field ==
+
+=== Single layer ===
+
+=== Multilayer ===
+
+== Flux ==
+
+==== Pinhole ====
+
+==== Slower ====
+
+==== Radial spreading ====
